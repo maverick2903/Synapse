@@ -18,6 +18,7 @@ class Titandex:
 
     def TitanvsTitan(self):
         while(True):
+            print("Name of the first Titan: ",self.titan_name)
             titan2_name = input("Enter name of the second Titan: ")
             titan2_strength = input("Enter strength of the second Titan: ")
             if(self.titan_strength > int(titan2_strength) and titan2_name!=self.titan_name):
@@ -36,7 +37,7 @@ class Titandex:
 titans = ["Founding Titan","Attack Titan","Armored Titan","Colossal Titan","War Hammer Titan","Beast Titan","Cart Titan","Female Titan","Jaw Titan"]
 t_height = [13,15,15,60,15,17,4,14,5]
 t_strength = [350,275,250,300,235,250,175,270,225]
-ch = input("1 for TvS and 0 for TvT ")
+ch = input("1 for Titan vs Scout and 0 for Titan vs Titan ")
 if(ch=='1'):
     for i in range(len(titans)):
         fight = Titandex(titans[i],t_height[i],t_strength[i])
